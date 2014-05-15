@@ -1,0 +1,2 @@
+# SSH Auto Completion of Remote Hosts
+complete -W "$(echo `cat ~/.ssh/config | grep '^Host ' | colrm 1 5`)" ssh
